@@ -67,4 +67,5 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 ## 環境構築
 ### 参考記事
-- https://qiita.com/hinako_n/items/f15646ea548bcdc8ac6c
+- [DockerでPHP（Laravel）+ nginx + MySQLのLEMP環境を構築する](https://qiita.com/hinako_n/items/f15646ea548bcdc8ac6c)
+- [【Laravel】ViteからLaravel Mixに戻す方法](https://chigusa-web.com/blog/vite-to-mix/)
