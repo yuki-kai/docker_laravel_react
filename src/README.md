@@ -70,3 +70,4 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 - [DockerでPHP（Laravel）+ nginx + MySQLのLEMP環境を構築する](https://qiita.com/hinako_n/items/f15646ea548bcdc8ac6c)
 - [【Laravel】ViteからLaravel Mixに戻す方法](https://chigusa-web.com/blog/vite-to-mix/)
 - [【Laravel9】Laravel Mixを使用しているプロジェクトでBreezeをインストールすると、js・css共に反映されない問題](https://qiita.com/onkz/items/d609adf0891d810fe862)
+- [Laravel8でTypeScript版Reactを使う方法](https://www.webopixel.net/php/1682.html)
