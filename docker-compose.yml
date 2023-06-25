@@ -29,13 +29,37 @@ services:
     ports:
       - 3308:3306
     environment:
-      MYSQL_DATABASE: database
+      MYSQL_DATABASE: docker_laravel_react
       MYSQL_USER: user
       MYSQL_PASSWORD: password
       MYSQL_ROOT_PASSWORD: password
       TZ: 'Asia/Tokyo'
     volumes:
       - mysql-volume:/var/lib/mysql
+      - ./docker/mysql/initdb.d:/docker-entrypoint-initdb.d
+
+  phpmyadmin:
+    container_name: docker_laravel_react_phpmyadmin
+    image: phpmyadmin/phpmyadmin
+    platform: linux/x86_64
+    environment:
+      - PMA_ARBITRARY=1
+      - PMA_HOST=mysql
+      - PMA_USER=user
+      - PMA_PASSWORD=password
+    links:
+      - mysql
+    ports:
+      - 8083:80
+    volumes:
+      - ./phpmyadmin/sessions:/sessions
+
+  mailhog:
+    container_name: docker_laravel_react_mailhog
+    image: mailhog/mailhog
+    platform: linux/x86_64
+    ports:
+      - 8084:8025
       
 volumes:
   mysql-volume:
